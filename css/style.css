@@ -143,3 +143,44 @@ li img {
     margin-left: 17.5%;
 }
 
+/* ############## LAYOUT ################ */
+
+#channels {
+/* the channel area should take 40% of the browser window and be placed at the left */
+    width: 40%;
+    position: fixed;
+    left: 0px;
+}
+
+#chat {
+/* the chat area should take the other 60% of the browser window and be placed at the right */
+    width: 60%;
+    position: fixed;
+    right: 0px;
+}
+
+/* app-bars layout */ 
+
+h1, #tab-bar {
+       height: 65px;
+       line-height: 65px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+    display: flex;
+}
+
+h1 img {
+    padding: 9px 0px 0px 10px;
+}
+
+#tab-bar {
+    width: inherit;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
