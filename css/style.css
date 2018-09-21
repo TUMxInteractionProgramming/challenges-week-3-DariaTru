@@ -159,6 +159,10 @@ li img {
     right: 0px;
 }
 
+#channels, #chat {
+    height: 100%;
+}
+
 /* app-bars layout */ 
 
 h1, #tab-bar {
@@ -169,6 +173,7 @@ h1, #tab-bar {
 h1 {
     font-size: 25px;
     font-weight: normal;
+    letter-spacing: -1px;
     display: flex;
 }
 
