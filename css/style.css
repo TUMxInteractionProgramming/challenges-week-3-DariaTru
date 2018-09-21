@@ -67,7 +67,7 @@ li img {
 /* TAB BAR */
 
 /* #4 #sweat #tab-bar */
-#tab-bar {
+#tab-bar, #chat-bar {
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
@@ -75,7 +75,7 @@ li img {
 }
 
 /* #4 add styles to #tab-bar #buttons */
-#tab-bar button {
+#tab-bar button, #chat-bar button {
     background-color: white;
     border: none;
     font-size: 13px;
@@ -165,7 +165,7 @@ li img {
 
 /* app-bars layout */ 
 
-h1, #tab-bar {
+h1, #tab-bar, #chat-bar {
        height: 65px;
        line-height: 65px;
 }
@@ -181,7 +181,7 @@ h1 img {
     padding: 9px 0px 0px 10px;
 }
 
-#tab-bar {
+#tab-bar, #chat-bar {
     width: inherit;
     position: fixed;
     bottom: 0px;
@@ -189,3 +189,56 @@ h1 img {
     justify-content: space-around;
 }
 
+#chat-bar button {
+    display: initial;
+    width: auto;
+    position: absolute;
+    left: 0px;
+}
+
+#emojis {
+    background-color: white;
+    border: solid 1px black;
+    position: relative;
+    bottom: 220px;
+    left: -290px;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    text-align: left;
+    padding: 16px;
+    overflow: auto;
+}
+
+/* channel and message areas */
+
+ul, #messages {
+    /* scrolling for channel and message areas */
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    bottom: 65px;
+    overflow: auto;
+}
+
+.channel-meta {
+    position: absolute;
+    right: 4px;
+}
+
+.message {
+    position: relative;
+}
+
+.message button {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
